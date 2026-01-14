@@ -2,6 +2,8 @@ import os
 import importlib.util
 from discord import app_commands 
 
+# Functon to load the slash commands
+# /commands/slash/category/command_module.py
 def load_commands(app: app_commands.CommandTree, root_dir: str) -> None:
   command_main_path = os.path.join(root_dir, "commands", "slash")
   
